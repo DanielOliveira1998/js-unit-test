@@ -18,9 +18,10 @@ const average = (numbersArray) => {
       count += number;
     }
     const resolution = Math.round(count/numbersArray.length);
-    // console.log(resolution);
     return resolution;
-  } 
+  } else {
+    return undefined;
+  }
 };
 
 
