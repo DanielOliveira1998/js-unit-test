@@ -45,5 +45,6 @@ describe('6 - Implemente os casos de teste para a função `productDetails`', ()
     expect(productDetails('Sabão', 'Água')[0]).not.toEqual(productDetails('Sabão', 'Água')[1])
     // Teste se os dois productIds terminam com 123.
     expect(productDetails('Sabão', 'Água')[0].details.productId).toContain('123');
+    expect(productDetails('Sabão', 'Água')[1].details.productId).toContain('123');
   });
 });
